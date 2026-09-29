@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact – Rojat Atici</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Outfit:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><a class="logo" href="index.html">Rojat Atici</a><button id="burger" aria-label="Menu"
+            aria-expanded="false">Menu</button>
+        <nav><a href="index.html">Accueil</a><a href="projets.html">Projets et veille</a><a href="contact.html"
+                class="on">Contact</a></nav>
+    </header>
+    <div id="alt" aria-hidden="true"></div>
+    <div class="hero band">
+        <div class="stars"></div>
+        <div class="sun"></div><svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+            <g data-s=".35">
+                <polygon fill="#5b7ea5"
+                    points="0,400 180,300 320,380 520,220 700,360 880,260 1080,380 1250,290 1440,370 1440,600 0,600" />
+                <polygon fill="#fff" points="520,220 490,262 510,254 525,270 545,252 560,262" />
+                <polygon fill="#fff" points="880,260 855,296 875,290 890,302 908,288 915,296" />
+            </g>
+            <polygon data-s=".2" fill="#2F4B6E"
+                points="0,480 200,380 380,470 600,340 800,470 1000,400 1200,490 1440,410 1440,600 0,600" />
+            <polygon data-s=".08" fill="#EAF2F7"
+                points="0,560 240,500 460,555 700,480 960,550 1200,490 1440,545 1440,600 0,600" />
+        </svg>
+        <div class="hero-txt">
+            <h1>Contact</h1>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h2>Écrivez-moi</h2>
+            <p>Un stage, une alternance, un projet ? Ma porte est ouverte, comme celle d’un refuge.</p>
+            <p style="margin:14px 0 36px"><a class="mail" href="mailto:rjt@gmail.com">rjt@gmail.com</a></p>
+            <form id="contact" novalidate>
+                <div><label for="nom">Nom</label><input id="nom" name="nom" data-check autocomplete="name">
+                    <div class="err"></div>
+                </div>
+                <div><label for="email">E-mail</label><input id="email" name="email" type="email" data-check
+                        autocomplete="email">
+                    <div class="err"></div>
+                </div>
+                <div><label for="sujet">Sujet</label><input id="sujet" name="sujet" data-check>
+                    <div class="err"></div>
+                </div>
+                <div><label for="message">Message</label><textarea id="message" name="message" rows="5"
+                        data-check></textarea>
+                    <div class="err"></div>
+                </div>
+                <button class="cta" type="submit">Envoyer le message</button>
+                <div id="ok" role="status">Votre messagerie s’ouvre pour envoyer le message.</div>
+            </form>
+        </section>
+    </main>
+    <footer>© 2026 Prénom Nom · Fait en HTML, CSS et JavaScript, sans framework.</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
